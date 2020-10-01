@@ -3,7 +3,6 @@ package edu.smg;
 import javax.swing.JOptionPane;
 
 public class MultiPlanetaryWeight {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String weightOnEarth = (String) JOptionPane.showInputDialog(null, "What is your weight on Earth?", null, 3);
@@ -35,7 +34,7 @@ public class MultiPlanetaryWeight {
 			weightOnAnotherPlanet = 1.13 * weight;
 			break;
 		}
-		System.out.println("Your weight on " + planet + " is " + weightOnAnotherPlanet + " kg.");
+		System.out.println("Your weight on " + planet + " is " 
+		+ (int)(weightOnAnotherPlanet*100)/100.0 + " kg.");
 	}
-
 }
